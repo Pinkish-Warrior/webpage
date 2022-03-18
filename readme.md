@@ -3,10 +3,9 @@
 
 # 👋 Hello all! 
 
-## I am Tania.
-## A junior software developer, originally from Brazil and have lived in London for the last 17 years.
+## I am Tania, a junior software developer.
 
-## Today I will guide you through the adventure of my life, be sure to hold on tight because this will be the ride of our life.
+## Today I will guide you through the adventure of my life. </br> With  no  two days are the same; learning  `<code>`  has brought me fresh and exciting challenges, gaining the perfect skill to endeavour in a new career path in Software Development by creating and maintaining computers' software applications and websites.
 
 before coding
 
