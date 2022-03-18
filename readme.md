@@ -17,7 +17,7 @@ With no two days being the same; learning to `{code}` has brought me fresh a
 <br />
 
 ### 🎨 Drawing and Painting
-<p> A Cerebral connection within halves </p>
+<p> A Cerebral connection within halves. </p>
 <br />
 
 
