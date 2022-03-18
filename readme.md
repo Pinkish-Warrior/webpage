@@ -1,27 +1,19 @@
 
-<img src="./images/tRosa.png" width=30%>
+<img src="./images/tRosa.png" width=25%>
 
 # 👋 Hello all! 
 
 ## I am Tania, a junior software developer.
 
-## Today I will guide you through the adventure of my life. </br> With  no  two days are the same; learning  `<code>`  has brought me fresh and exciting challenges, gaining the perfect skill to endeavour in a new career path in Software Development by creating and maintaining computers' software applications and websites.
-
-before coding
-
-
-after coding
-
+With no two days are the same; learning to `<code>` has brought me fresh and exciting challenges, gaining additional skills. Leading me to a new career path in Software Development. By creating and maintaining computers' software applications, websites and having fun.
 
 ## ✨ Interests:
 
----
-
-### 🏍️ Motorcycles:
+### 🏍️ Motorcycles
 Anything that gets your blood racing is probably worth doing.
 <br />
 
-### 🎨 Drowing and Paiting
+### 🎨 Drowing and Painting
 A Cerebral connection...
 <br />
 
@@ -29,12 +21,5 @@ A Cerebral connection...
 Making a diference!
 <br />
 
-## 🔧 Tools:
+### 🔧 Tools
 
----
-
-
-| Syntax | Description |
-| ----------- | ----------- |
-| Header | Title |
-| Paragraph | Text |
