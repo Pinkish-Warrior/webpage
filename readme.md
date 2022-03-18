@@ -18,17 +18,16 @@ after coding
 ---
 
 ### 🏍️ Motorcycles:
-
----
-A have allways liked the feeling of the wind in my face.
+Anything that gets your blood racing is probably worth doing.
 <br />
 
 ### 🎨 Drowing and Paiting
-I love to do some painting and drowing innmy free time it helps to still my mind. 
+A Cerebral connection...
 <br />
 
 ### 🌱 Volunterring
-
+Making a diference!
+<br />
 
 ## 🔧 Tools:
 
