@@ -1,4 +1,4 @@
-<p align="right" width="100%">
+<p align="right" width="15%">
 <img src="./images/tRosa.png" width=15%>
 <p >
 
@@ -6,7 +6,7 @@
 
 ## I am Tania, a junior software developer.
 
-With no two days being the same; learning to `{code}` has brought me fresh and exciting challenges, gaining additional skills, which led me to a new career path in Software Development; by creating and maintaining computers' software applications, websites and having FUN 🎉. 
+With no two days being the same; learning to `{code}` has brought me fresh and exciting challenges, gaining additional skills, which led me to a new career path in Software Development; by creating and maintaining computers' software applications, websites and last but not least having FUN 🎉. 
 <br />
 <br />
 
