@@ -3,6 +3,7 @@
 <img src="./images/tRosa.png" width=15%>
 </p>
 
+<a href="https://www.buymeacoffee.com/PinkishWarrior" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
 # 👋 Hello all! 
 
 ## I am Tania, a junior software developer.
