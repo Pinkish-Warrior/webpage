@@ -47,6 +47,10 @@ hr {
 
 .circular {
   border-radius: 50%;
+  background-color: #E3FDFD;
+  overflow: hidden;
+  margin: auto;
+  position: relative;
 }
 
 .top-container {
@@ -78,18 +82,31 @@ hr {
   width: 30%;
   margin: auto;
 }
+.image-crop {
+  width: 200px; /* Set the desired width of the cropped area */
+  height: 200px; /* Set the desired height of the cropped area */
+  overflow: hidden; /* Ensures anything outside the container is hidden */
+  border-radius: 50%; /* Makes the cropped area circular */
+  position: relative; /* Allows positioning of the image inside */
+  margin: 0 auto; /* Centers the container horizontally */
+}
 
 .computer {
-  width: 25%;
+  width: 30%;
   float: left;
   margin-right: 30px;
   border-radius: 50%;
   border-style: solid;
-  border-color: #66BFBF;
+  border-color: #F5FFFA;
+  position: relative;
+  max-width: 130%;
+  display: block;
+  z-index: 1;
+  /* background-color: #F5FFFA; */
 }
 
 .chilli-img {
-  width: 25%;
+  width: 30%;
   float: right;
   margin-left: 30px;
   border-radius: 50%;
@@ -98,17 +115,18 @@ hr {
 }
 
 .cubic {
-  width: 25%;
+  width: 28%;
   float: left;
   margin-right: 30px;
   border-radius: 50%;
   border-style: solid;
-  border-color: #000;
+  border-color: #ffb6c1
 }
 
 .contact-message {
   width: 40%;
   margin: 40px auto 60px;
+  justify-content: center !important;
 }
 
 .copyright{
