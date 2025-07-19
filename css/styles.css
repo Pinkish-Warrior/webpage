@@ -68,6 +68,14 @@ hr {
   background-color: #66BFBF;
 }
 
+.star-divider {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  margin: 2rem 0;
+  letter-spacing: 0.2em;
+}
+
 .skill-row {
   width: 50%;
   margin: 100px auto 100px auto;
