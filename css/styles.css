@@ -105,7 +105,39 @@ hr {
   text-align: left;
 }
 
+.skills-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 50px auto;
+  width: 80%;
+  text-align: left;
+}
+
+.technical-skills, .cybersecurity-skills {
+  flex: 1;
+  min-width: 300px;
+  margin: 1rem;
+  padding: 1.5rem;
+  border: 1px salmon;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(255, 127, 80, 0.585);
+}
+
+.technical-skills ul, .cybersecurity-skills ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.technical-skills li, .cybersecurity-skills li {
+  margin-bottom: 0.5rem;
+}
+
 .pro {
+  text-decoration: underline;
+}
+
+.underline-text {
   text-decoration: underline;
 }
 
