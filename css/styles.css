@@ -210,6 +210,13 @@ hr {
   bottom: 300px;
 }
 
+.mountain-img{
+  width: 100%;
+  height: auto;
+  display: block;
+
+}
+
 
 .btn {
   background: #11cdd4;
