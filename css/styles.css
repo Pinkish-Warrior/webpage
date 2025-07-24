@@ -7,38 +7,34 @@ body {
 }
 
 h1 {
-  color: #66BFBF;
+  color: #008080; /* Darker Teal for High Contrast */
   font-family: "Sacramento", cursive;
   font-size: clamp(2.5rem, 5vw + 1rem, 5.625rem);
   margin: 50px auto 0 auto;
-
-  /* color: #FE7E6D; */
 }
 
 h2 {
   font-family: "Montserrat", sans-serif;
   margin-top: 0;
   font-size: clamp(1.5rem, 3vw + 1rem, 2.6rem);
-  color: #66BFBF;
-  /* color: #FE7E6D; */
+  color: #008080; /* Darker Teal */
   font-weight: normal;
   padding-bottom: 10px;
 }
 
 .top-container h2 {
-  color: #FF7F50;
+  color: #D2691E; /* Darker Coral/Chocolate */
 }
 
 h3 {
   font-family: "Montserrat", sans-serif;
   margin-top: 0;
   font-size: clamp(1.2rem, 2.5vw + 0.5rem, 1.8rem);
-  color: #11999E;
-  /* color: #FE7E6D; */
+  color: #006666; /* Even Darker Teal for subtitles */
 }
 
 h4 {
-  color: #11999E;
+  color: #006666; /* Darker Teal */
 }
 
 p {
@@ -47,7 +43,7 @@ p {
 }
 
 .quote-color {
-  color: #FF7F50;
+  color: #D2691E; /* Darker Coral/Chocolate */
   font-size: clamp(0.9rem, 1.8vw + 0.4rem, 1.1rem);
   font-style: italic;
   display: block;
@@ -55,7 +51,7 @@ p {
   padding: 1.5rem 2rem;
   margin: 2rem auto;
   border-radius: 8px;
-  width: 60%; /* Adjust width as needed */
+  width: 60%;
 }
 
 hr {
@@ -87,13 +83,13 @@ hr {
 
 .bottom-container {
   padding: 50px 0 20px;
-  background-color: #66BFBF;
+  background-color: #004C4C; /* Dark Teal Background */
 }
 
 .star-divider {
   text-align: center;
   font-size: 1.8rem;
-  color: #FF7F50;
+  color: #D2691E; /* Darker Coral/Chocolate */
   margin: 2rem 0;
   letter-spacing: 0.2em;
   clear: both;
@@ -119,9 +115,9 @@ hr {
   min-width: 300px;
   margin: 1rem;
   padding: 1.5rem;
-  border: 1px salmon;
+  border: 1px solid #D2691E;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(255, 127, 80, 0.585);
+  box-shadow: 0 4px 8px rgba(210, 105, 30, 0.5);
 }
 
 .technical-skills ul, .cybersecurity-skills ul {
@@ -145,13 +141,14 @@ hr {
   width: 30%;
   margin: auto;
 }
+
 .image-crop {
-  width: 200px; /* Set the desired width of the cropped area */
-  height: 200px; /* Set the desired height of the cropped area */
-  overflow: hidden; /* Ensures anything outside the container is hidden */
-  border-radius: 50%; /* Makes the cropped area circular */
-  position: relative; /* Allows positioning of the image inside */
-  margin: 0 auto; /* Centers the container horizontally */
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  position: relative;
+  margin: 0 auto;
 }
 
 .computer {
@@ -165,7 +162,6 @@ hr {
   max-width: 130%;
   display: block;
   z-index: 1;
-  /* background-color: #F5FFFA; */
 }
 
 .chilli-img {
@@ -174,7 +170,7 @@ hr {
   margin-left: 30px;
   border-radius: 50%;
   border-style: solid;
-  border-color: #66BFBF;
+  border-color: #008080;
 }
 
 .cubic {
@@ -183,7 +179,7 @@ hr {
   margin-right: 30px;
   border-radius: 50%;
   border-style: solid;
-  border-color: #ffb6c1
+  border-color: #D2691E;
 }
 
 .contact-message {
@@ -210,13 +206,12 @@ hr {
   bottom: 300px;
 }
 
-.mountain-img{
-  width: 100%;
-  height: auto;
-  display: block;
-
+.mountain-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
-
 
 .btn {
   background: #11cdd4;
@@ -253,14 +248,13 @@ a .btn {
 }
 
 a {
-  color: #11999E;
+  color: #EAF6F6; /* Light color for dark background */
   font-family: "Montserrat", sans-serif;
   margin: 10px 20px;
   text-decoration: none;
-  /* color: #FE7E6D; */
 }
  a:hover {
-   color: #11999E;
+   color: #FFFFFF;
  }
 
 ul {
@@ -290,23 +284,21 @@ ul {
 /* For screens smaller than 800px (tablets and mobile phones) */
 @media (max-width: 800px) {
   .skill-row {
-    width: 80%; /* Use more of the screen width */
-    text-align: center; /* Center content for a better mobile look */
+    width: 80%;
+    text-align: center;
   }
 
-  /* Make floated images stack instead of float */
   .computer,
   .chilli-img,
   .cubic {
-    float: none; /* Disable the float */
-    margin: 20px auto; /* Center the image with some margin */
-    width: 50%; /* Adjust size for mobile */
+    float: none;
+    margin: 20px auto;
+    width: 50%;
   }
 
-  /* Adjust cloud positions or hide them */
   .top-cloud,
   .bottom-cloud {
-    display: none; /* A simple solution is to hide them on small screens */
+    display: none;
   }
 
   .intro {
@@ -314,12 +306,12 @@ ul {
   }
 
   .side-by-side-container {
-    flex-direction: column; /* Stack the columns vertically */
+    flex-direction: column;
     align-items: center;
   }
 
   .gems-found, .projects {
-    width: 90%; /* Allow columns to take up more width */
+    width: 90%;
     margin-bottom: 2rem;
   }
 }
