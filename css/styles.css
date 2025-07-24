@@ -279,3 +279,40 @@ ul {
 .projects li {
   margin-bottom: 2rem;
 }
+
+/* For screens smaller than 800px (tablets and mobile phones) */
+@media (max-width: 800px) {
+  .skill-row {
+    width: 80%; /* Use more of the screen width */
+    text-align: center; /* Center content for a better mobile look */
+  }
+
+  /* Make floated images stack instead of float */
+  .computer,
+  .chilli-img,
+  .cubic {
+    float: none; /* Disable the float */
+    margin: 20px auto; /* Center the image with some margin */
+    width: 50%; /* Adjust size for mobile */
+  }
+
+  /* Adjust cloud positions or hide them */
+  .top-cloud,
+  .bottom-cloud {
+    display: none; /* A simple solution is to hide them on small screens */
+  }
+
+  .intro {
+    width: 80%;
+  }
+
+  .side-by-side-container {
+    flex-direction: column; /* Stack the columns vertically */
+    align-items: center;
+  }
+
+  .gems-found, .projects {
+    width: 90%; /* Allow columns to take up more width */
+    margin-bottom: 2rem;
+  }
+}
