@@ -235,6 +235,10 @@ body.dark-mode .middle-container h3 {
   color: #f0a060 !important;
 }
 
+body.dark-mode .projects li a{
+  color: #f0a060
+}
+
 .star-divider {
   text-align: center;
   font-size: 1.8rem;
@@ -434,6 +438,12 @@ ul {
 
 .gems-found li {
   margin-bottom: 1rem;
+}
+
+.projects li a{
+  display: block;
+  margin-top: 5px;
+  color: #008080;
 }
 
 .projects li {
