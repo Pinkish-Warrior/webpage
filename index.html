@@ -2,7 +2,13 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-vvt4KWwuNr51XfE5m+hzeNEGhiOfZzG97ccfqGsPwvE='; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com;">
+        <!--
+      IMPORTANT: Content Security Policy (CSP)
+      This policy enhances security by defining which external resources (scripts, styles, fonts, etc.) 
+      are allowed to be loaded. If you add a new resource from an external domain (like a CDN), 
+      you must add its source to the appropriate directive below (e.g., 'script-src') for it to work.
+    -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net 'sha256-vvt4KWwuNr51XfE5m+hzeNEGhiOfZzG97ccfqGsPwvE='; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com;">
     <title>Tania Rosa</title>
     <meta name="description" content="A London-based junior developer with a diligent mindset, passionately seeking new opportunities to innovate and contribute to the tech industry.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,7 +44,7 @@
       href="favicon_io/favicon-16x16.png"
     />
     <link rel="manifest" href="favicon_io/site.webmanifest" />
-    
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
   </head>
   <body>
     <div class="top-container">
@@ -196,7 +202,7 @@
           If you'd like to discover more about me, please drop me a message by
           clicking the button below.
         </p>
-        <a class="btn" href="mailto:tanrosa@gmail.com">CONTACT ME</a>
+        <a class="btn" id="contact-btn" href="mailto:tanrosa@gmail.com">CONTACT ME</a>
       </div>
     </div>
     
@@ -214,6 +220,7 @@
       >
       <p class="copyright">© 2022 Tania Santana. All Rights Reserved.</p>
     </div>
-  <script src="script.js"></script>
+    <span id="aria-live-region" class="visually-hidden" aria-live="polite"></span>
+    <script src="script.js"></script>
   </body>
 </html>
