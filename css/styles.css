@@ -21,7 +21,7 @@
   --hr-color: grey;
 
   /* Slide Switch Colors */
-  --switch-bg-off: --primary-bg;
+  --switch-bg-off: #f0a060;
   --switch-bg-on: #004C4C;
   --slider-bg: white;
 }
@@ -30,7 +30,7 @@ body.dark-mode {
   --primary-bg: #1a1a1a;
   --secondary-bg: #2a2a2a;
   --tertiary-bg: #3a3a3a;
-  --dark-teal-bg: #002020;
+  --dark-teal-bg: #f0a060;
 
   --primary-text: #e0e0e0;
   --secondary-text: #f0a060;
@@ -38,10 +38,10 @@ body.dark-mode {
   --white-text: #FFFFFF;
   --light-text-footer: #a0a0a0;
 
-  --btn-bg-start: #003333;
-  --btn-bg-end: #001a1a;
-  --btn-hover-start: #006666;
-  --btn-hover-end: #004c4c;
+  --btn-bg-start: #f0a060;
+  --btn-bg-end: #f0a060;
+  --btn-hover-start: #f0a060;
+  --btn-hover-end: #f0a060;
 
   --border-color-chilli: #80c0c0;
   --border-color-cubic: #f0a060;
@@ -49,8 +49,6 @@ body.dark-mode {
   --hr-color: #555;
 
   /* Slide Switch Colors - Dark Mode */
-  --switch-bg-off: #1a1a1a;
-  --switch-bg-on: #008080;
   --slider-bg: #e0e0e0;
 }
 
@@ -91,6 +89,12 @@ h3 {
 
 h4 {
   color: var(--tertiary-text); /* Darker Teal */
+}
+
+body.dark-mode .middle-container h2,
+body.dark-mode .middle-container h3,
+body.dark-mode .middle-container h4 {
+  color: var(--secondary-text);
 }
 
 p {
@@ -210,6 +214,26 @@ input:checked + .slider:before {
 }
 
 
+
+body.dark-mode .bottom-container {
+  background-color: #f0a060;
+}
+
+body.dark-mode .bottom-container a {
+  color: #FFFFFF;
+}
+
+body.dark-mode .bottom-container a:hover {
+  color: #a0a0a0;
+}
+
+body.dark-mode .bottom-container .copyright {
+  color: #FFFFFF;
+}
+
+body.dark-mode .middle-container h3 {
+  color: #f0a060 !important;
+}
 
 .star-divider {
   text-align: center;
