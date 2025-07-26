@@ -220,15 +220,15 @@ body.dark-mode .bottom-container {
 }
 
 body.dark-mode .bottom-container a {
-  color: #FFFFFF;
+  color: #5D4037;
 }
 
 body.dark-mode .bottom-container a:hover {
-  color: #a0a0a0;
+  color: #FFFFFF;
 }
 
 body.dark-mode .bottom-container .copyright {
-  color: #FFFFFF;
+  color: #5D4037;
 }
 
 body.dark-mode .middle-container h3 {
@@ -359,6 +359,7 @@ body.dark-mode .projects li a{
 }
 
 .top-cloud {
+  width: 150px;
   height: auto;
   position: absolute;
   right: 300px;
@@ -366,6 +367,7 @@ body.dark-mode .projects li a{
 }
 
 .bottom-cloud {
+  width: 150px;
   height: auto;
   position: absolute;
   left: 250px;
