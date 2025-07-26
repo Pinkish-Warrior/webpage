@@ -306,6 +306,7 @@ body.dark-mode .projects li a{
 
 .computer {
   width: 30%;
+  height: auto;
   float: left;
   margin-right: 30px;
   border-radius: 50%;
@@ -319,6 +320,7 @@ body.dark-mode .projects li a{
 
 .chilli-img {
   width: 30%;
+  height: auto;
   float: right;
   margin-left: 30px;
   border-radius: 50%;
@@ -328,6 +330,7 @@ body.dark-mode .projects li a{
 
 .cubic {
   width: 28%;
+  height: auto;
   float: left;
   margin-right: 30px;
   border-radius: 50%;
@@ -356,22 +359,24 @@ body.dark-mode .projects li a{
 }
 
 .top-cloud {
+  height: auto;
   position: absolute;
   right: 300px;
   top: 40px;
 }
 
 .bottom-cloud {
+  height: auto;
   position: absolute;
   left: 250px;
   bottom: 300px;
 }
 
 .mountain-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .btn {
