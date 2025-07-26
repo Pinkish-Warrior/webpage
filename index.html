@@ -8,7 +8,7 @@
       are allowed to be loaded. If you add a new resource from an external domain (like a CDN), 
       you must add its source to the appropriate directive below (e.g., 'script-src') for it to work.
     -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net 'sha256-P1DVIr8kd/brSRUPL3kM4nhiz1CW6fYi8ie+71YQo68='; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com;">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net 'unsafe-eval' 'sha256-P1DVIr8kd/brSRUPL3kM4nhiz1CW6fYi8ie+71YQo68='; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com;">
     <title>Tania Rosa</title>
     <meta name="description" content="A London-based junior developer with a diligent mindset, passionately seeking new opportunities to innovate and contribute to the tech industry.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,6 +38,15 @@
       href="favicon_io/favicon-16x16.png"
     />
     <link rel="manifest" href="favicon_io/site.webmanifest" />
+    <script>
+      // Prevents FOUC by applying the correct theme before the page renders
+      (function() {
+        const currentTheme = localStorage.getItem('theme');
+        if (currentTheme === 'dark-mode') {
+          document.documentElement.classList.add('dark-mode');
+        }
+      })();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
   </head>
   <body>

@@ -21,12 +21,12 @@
   --hr-color: grey;
 
   /* Slide Switch Colors */
-  --switch-bg-off: #f0a060;
-  --switch-bg-on: #004C4C;
+  --switch-bg-on: #f0a060;
+  --switch-bg-off: #004C4C;
   --slider-bg: white;
 }
 
-body.dark-mode {
+:root.dark-mode {
   --primary-bg: #1a1a1a;
   --secondary-bg: #2a2a2a;
   --tertiary-bg: #3a3a3a;
@@ -91,9 +91,9 @@ h4 {
   color: var(--tertiary-text); /* Darker Teal */
 }
 
-body.dark-mode .middle-container h2,
-body.dark-mode .middle-container h3,
-body.dark-mode .middle-container h4 {
+:root.dark-mode .middle-container h2,
+:root.dark-mode .middle-container h3,
+:root.dark-mode .middle-container h4 {
   color: var(--secondary-text);
 }
 
@@ -215,27 +215,27 @@ input:checked + .slider:before {
 
 
 
-body.dark-mode .bottom-container {
+:root.dark-mode .bottom-container {
   background-color: #f0a060;
 }
 
-body.dark-mode .bottom-container a {
+:root.dark-mode .bottom-container a {
   color: #5D4037;
 }
 
-body.dark-mode .bottom-container a:hover {
+:root.dark-mode .bottom-container a:hover {
   color: #FFFFFF;
 }
 
-body.dark-mode .bottom-container .copyright {
+:root.dark-mode .bottom-container .copyright {
   color: #5D4037;
 }
 
-body.dark-mode .middle-container h3 {
+:root.dark-mode .middle-container h3 {
   color: #f0a060 !important;
 }
 
-body.dark-mode .projects li a{
+:root.dark-mode .projects li a{
   color: #f0a060
 }
 
