@@ -93,7 +93,8 @@ h4, h5 {
 
 :root.dark-mode .middle-container h2,
 :root.dark-mode .middle-container h3,
-:root.dark-mode .middle-container h4 {
+:root.dark-mode .middle-container h4,
+:root.dark-mode .middle-container h5 {
   color: var(--secondary-text);
 }
 
