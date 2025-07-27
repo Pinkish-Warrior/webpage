@@ -87,7 +87,7 @@ h3 {
   color: var(--tertiary-text);
 }
 
-h4 {
+h4, h5 {
   color: var(--tertiary-text);
 }
 
