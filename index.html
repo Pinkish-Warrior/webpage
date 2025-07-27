@@ -1,19 +1,19 @@
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
-        <!--
+    <!--
       IMPORTANT: Content Security Policy (CSP)
       This policy enhances security by defining which external resources (scripts, styles, fonts, etc.) 
       are allowed to be loaded. If you add a new resource from an external domain (like a CDN), 
       you must add its source to the appropriate directive below (e.g., 'script-src') for it to work.
     -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net 'unsafe-eval' 'sha256-P1DVIr8kd/brSRUPL3kM4nhiz1CW6fYi8ie+71YQo68=' 'sha256-qsskirTAHTjFpgugDhPPhu1r5SGebgj+7++XrPEs+I8='; style-src 'self' https://cdn.jsdelivr.net https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; img-src 'self' https://cdn.jsdelivr.net data:;">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net 'unsafe-eval' 'unsafe-inline'; style-src 'self' https://cdn.jsdelivr.net https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; img-src 'self' https://cdn.jsdelivr.net data:; manifest-src 'self' https://cdn.jsdelivr.net;">
     <title>Tania Rosa</title>
     <meta name="description" content="A London-based junior developer with a diligent mindset, passionately seeking new opportunities to innovate and contribute to the tech industry.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; manifest-src 'self' https://cdn.jsdelivr.net">
 
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css"/>
     <link rel="icon" href="favicon.ico?v=2" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -49,6 +49,7 @@
         }
       })();
     </script>
+    
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
   </head>
   <body>
@@ -61,62 +62,40 @@
       <h1>I'm Tania.</h1>
       <h2>&#123;a <span class="underline-text">pro</span>grammer.&#125;</h2>
       <img class="bottom-cloud" src="images/cloud.png" alt="cloud-img" />
-      <img class="mountain-img" src="images/mountain.png" alt="mountain-img" fetchpriority="high" width="600" height="400" />
+      <img class="mountain-img" src="images/mountain.png" alt="mountain-img" fetchpriority="high" />
     </div>
     <div class="middle-container">
       <div class="profile">
-        <!-- <img class="circular"src="https://media-exp1.licdn.com/dms/image/C4D03AQFTTE8-R_qiiw/profile-displayphoto-shrink_800_800/0/1612364518944?e=1646870400&v=beta&t=Vrum_G62qmjRTpwwwMcmSHIskAcgWHKe7aqp_LBOxlo" width="20%" alt="Tania Rosa"> -->
-        <!-- <img class="circular"src="./images/tRosa75.png" width="150px" height="150px" alt="Tania Rosa"> -->
         <img
           class="circular"
           src="images/Tania.jpeg"
-          width="180"
-          height="180"
           alt="Tania Rosa"
         />
         <h2>Hello.</h2>
         <p class="intro">
           A detail-oriented Syntax Whisperer with a passion for clean code and robust system architecture.
         </p>
-        <!-- <p>
-          "I think that one of the reasons I love programming is that I love understanding how things work. As a child, I was always disassembling cars and radios.”
-        </p> -->
       </div>
       <div class="star-divider">─── ★ ───</div>
       <div class="skills">
-        <!-- <h2>My Skills.</h2> -->
         <h2>At a Glance.</h2>
         <div class="skill-row">
-          <!-- <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_vnanislb.json" background="transparent"  speed="1"  style="width: 300px; height: 300px;" loop controls autoplay></lottie-player> -->
           <img
             class="computer"
             src="images/yinyang.jpg"
-            width="800"
-            height="800"
             alt="computer-img"
             loading="lazy"
           />
-          <!-- <img class="circular" src="https://cdn.dribbble.com/users/1633961/screenshots/14194214/media/4975dce609895fd0bfc987605fa4dba8.gif" width="225px 225px"> -->
-          <!-- <img class="skills-gif" src="https://i.gifer.com/GbpT.gif" alt="skills-gif"> -->
-          <!-- <img class="" src="https://i.gifer.com/3SBP.gif" alt="responsive-gif">
-            <img class="" src="https://i.gifer.com/6K8u.gif" alt="respo-gif"> -->
-          <!-- <img class="" src="https://i.gifer.com/XVZN.gif" alt="res-gif"> -->
           <h3>Profile</h3>
           <p>I am a dedicated junior full-stack software developer with a strong foundation in tools like Git and the command line. My learning journey has been centered around mastering Golang, JavaScript, C and recently I am fostering a love for Python, while also refining my HTML, CSS, and SVG skills for front-end development. This dual focus allows me to build seamless, efficient, and visually engaging web applications. Additionally, I am deeply passionate about cybersecurity and committed to deepening my understanding of secure coding practices while staying up-to-date with current industry tools and technologies.</p>
         </div>
         <div class="skill-row">
-          <img class="chilli-img" src="images/security.jpeg" alt="padlock-img" width="225" height="225" loading="lazy" />
+          <img class="chilli-img" src="images/security.jpeg" alt="padlock-img" loading="lazy" />
           <h3>Security</h3>
           <p>My commitment to cybersecurity is reflected in my proactive approach to secure development. I integrate best practices from the outset, ensuring that the solutions I build are not only innovative and efficient but also robust against potential vulnerabilities. My work consistently prioritizes the integrity and reliability of applications.</p>
         </div>
         <div class="skill-row">
-          <!-- <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_vnanislb.json" background="transparent"  speed="1"  style="width: 300px; height: 300px;" loop controls autoplay></lottie-player> -->
-          <img class="cubic" src="images/effective_collaboration1.png" alt="colaboration" width="900" height="600" loading="lazy" />
-          <!-- <img class="circular" src="https://cdn.dribbble.com/users/1633961/screenshots/14194214/media/4975dce609895fd0bfc987605fa4dba8.gif" width="225px 225px"> -->
-          <!-- <img class="skills-gif" src="https://i.gifer.com/GbpT.gif" alt="skills-gif"> -->
-          <!-- <img class="" src="https://i.gifer.com/3SBP.gif" alt="responsive-gif">
-          <img class="" src="https://i.gifer.com/6K8u.gif" alt="respo-gif"> -->
-          <!-- <img class="" src="https://i.gifer.com/XVZN.gif" alt="res-gif"> -->
+          <img class="cubic" src="images/effective_collaboration1.png" alt="colaboration" loading="lazy" />
           <h3>Collaboration</h3>
           <p>I thrive in dynamic, collaborative environments, actively contributing to team success through open communication and a shared commitment to project goals. My inquisitive nature drives me to continuously learn and adapt, fostering an atmosphere of collective growth and innovation.</p>
         </div>
@@ -125,10 +104,9 @@
             class="chilli-img"
             src="images/smart_brain.png"
             alt="chilli-img"
-            width="512"
-            height="512"
-            loading="lazy"
-          />
+            loading="lazy"  
+          /> 
+          <!-- "lazy" defer it until it is actually needed -->
 
           <h3>Excellence</h3>
           <p>I am dedicated to delivering high-quality, impactful results. My approach is rooted in aligning personal values with project objectives, ensuring that every solution I develop is purposeful, efficient, and exceeds expectations.</p>
@@ -161,7 +139,6 @@
       </div>
       <div class="star-divider">─── ★ ───</div>
       <div class="intro">
-          <!-- <div class="star-divider">─── ★ ───</div> -->
           <h2>Web Development</h2>
         <p>
           My journey into web development started with curiosity and has grown into a deep passion. After transitioning from another career path, I discovered that building digital tools can be both creative and impactful. I’m excited by the opportunity to solve real-world problems through code, and I want to create applications that are accessible, secure, and user-focused.
@@ -204,7 +181,6 @@
       <div class="star-divider">─── ★ ───</div>
       <div class="contact-me">
         <h2>Get In Touch</h2>
-        <!-- <h3>If you interested in learning more about me, click on the "CONTACT ME" bottom dowm below.</h3> -->
         <p class="contact-message">
           If you'd like to discover more about me, please drop me a message by
           clicking the button below.
@@ -230,3 +206,4 @@
     <span id="aria-live-region" class="visually-hidden" aria-live="polite"></span>
     <script src="script.js"></script>
   </body>
+</html>

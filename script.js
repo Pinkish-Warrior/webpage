@@ -2,20 +2,31 @@ document.addEventListener('DOMContentLoaded', () => {
     const toggleButton = document.getElementById('dark-mode-toggle');
     const rootEl = document.documentElement;
 
-    // Set the toggle based on the current theme
-    if (rootEl.classList.contains('dark-mode')) {
-        toggleButton.checked = true;
-    }
-
-    toggleButton.addEventListener('click', () => {
-        if (rootEl.classList.contains('dark-mode')) {
-            rootEl.classList.remove('dark-mode');
-            localStorage.setItem('theme', '');
+    // This function applies the theme and updates the toggle's state.
+    const applyTheme = () => {
+        const isDarkMode = localStorage.getItem('theme') === 'dark-mode';
+        if (isDarkMode) {
+            rootEl.classList.add('dark-mode');
+            toggleButton.checked = true;
         } else {
+            rootEl.classList.remove('dark-mode');
+            toggleButton.checked = false;
+        }
+    };
+
+    // This function handles the click event on the toggle.
+    toggleButton.addEventListener('click', () => {
+        if (toggleButton.checked) {
             rootEl.classList.add('dark-mode');
             localStorage.setItem('theme', 'dark-mode');
+        } else {
+            rootEl.classList.remove('dark-mode');
+            localStorage.setItem('theme', '');
         }
     });
+
+    // Apply the correct theme as soon as the DOM is loaded.
+    applyTheme();
 
     const contactBtn = document.getElementById('contact-btn');
     const ariaLiveRegion = document.getElementById('aria-live-region');

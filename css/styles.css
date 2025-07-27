@@ -61,7 +61,7 @@ body {
 }
 
 h1 {
-  color: var(--primary-text); /* High Contrast Dark Grey */
+  color: var(--primary-text);
   font-family: "Sacramento", cursive;
   font-size: clamp(2.5rem, 5vw + 1rem, 5.625rem);
   margin: 50px auto 0 auto;
@@ -71,24 +71,24 @@ h2 {
   font-family: "Montserrat", sans-serif;
   margin-top: 0;
   font-size: clamp(1.5rem, 3vw + 1rem, 2.6rem);
-  color: var(--primary-text); /* High Contrast Dark Grey */
+  color: var(--primary-text);
   font-weight: normal;
   padding-bottom: 10px;
 }
 
 .top-container h2 {
-  color: var(--secondary-text); /* Sienna for high contrast */
+  color: var(--secondary-text);
 }
 
 h3 {
   font-family: "Montserrat", sans-serif;
   margin-top: 0;
   font-size: clamp(1.2rem, 2.5vw + 0.5rem, 1.8rem);
-  color: var(--tertiary-text); /* Even Darker Teal for subtitles */
+  color: var(--tertiary-text);
 }
 
 h4 {
-  color: var(--tertiary-text); /* Darker Teal */
+  color: var(--tertiary-text);
 }
 
 :root.dark-mode .middle-container h2,
@@ -103,7 +103,7 @@ p {
 }
 
 .quote-color {
-  color: var(--secondary-text); /* Sienna for high contrast */
+  color: var(--secondary-text);
   font-size: clamp(0.9rem, 1.8vw + 0.4rem, 1.1rem);
   font-style: italic;
   display: block;
@@ -120,7 +120,7 @@ hr {
   border-width: 8px;
   border-color: var(--hr-color);
   width: 5%;
-  margin: 100px auto 100px auto;
+  margin: 100px auto;
 }
 
 .circular {
@@ -129,6 +129,8 @@ hr {
   overflow: hidden;
   margin: auto;
   position: relative;
+  width: 180px;
+  height: 180px;
 }
 
 .top-container {
@@ -162,7 +164,7 @@ hr {
   right: 0;
   bottom: 0;
   background-color: var(--switch-bg-off);
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1); /* Light, subtle border-like shadow */
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -184,7 +186,7 @@ input:checked + .slider {
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 0 1px var(--switch-bg-on); /* Increased spread for visibility */
+  box-shadow: 0 0 0 1px var(--switch-bg-on);
 }
 
 input:checked + .slider:before {
@@ -209,11 +211,9 @@ input:checked + .slider:before {
 
 .bottom-container {
   padding: 50px 0 20px;
-  background-color: var(--dark-teal-bg); /* Dark Teal Background */
-  min-height: 100px; /* Ensure visibility */
+  background-color: var(--dark-teal-bg);
+  min-height: 100px;
 }
-
-
 
 :root.dark-mode .bottom-container {
   background-color: #f0a060;
@@ -242,7 +242,7 @@ input:checked + .slider:before {
 .star-divider {
   text-align: center;
   font-size: 1.8rem;
-  color: var(--secondary-text); /* Sienna for high contrast */
+  color: var(--secondary-text);
   margin: 2rem 0;
   letter-spacing: 0.2em;
   clear: both;
@@ -250,7 +250,7 @@ input:checked + .slider:before {
 
 .skill-row {
   width: 50%;
-  margin: 100px auto 100px auto;
+  margin: 100px auto;
   text-align: left;
 }
 
@@ -343,12 +343,12 @@ input:checked + .slider:before {
   flex-direction: column;
   align-items: center;
   position: relative;
-  padding-bottom: 150px; /* Make space for the badge */
+  padding-bottom: 150px;
 }
 
 .contact-message {
   width: 40%;
-  margin: 20px auto 5px; /* Reduced bottom margin */
+  margin: 20px auto 5px;
   justify-content: center !important;
 }
 
@@ -383,39 +383,30 @@ input:checked + .slider:before {
 
 .btn {
   background: var(--btn-bg-start);
-  background-image: -webkit-linear-gradient(top, var(--btn-bg-start), var(--btn-bg-end));
-  background-image: -ms-linear-gradient(top, var(--btn-bg-start), var(--btn-bg-end));
-  background-image: -o-linear-gradient(top, var(--btn-bg-start), var(--btn-bg-end));
   background-image: linear-gradient(to bottom, var(--btn-bg-start), var(--btn-bg-end));
-  -webkit-border-radius: 8;
   border-radius: 8px;
-  -webkit-box-shadow: 0px 1px 3px #66BFBF;
   box-shadow: 0px 1px 3px #66BFBF;
   font-family: "Montserrat", sans-serif;
   color: var(--white-text);
   font-size: 20px;
-  padding: 10px 20px 10px 20px;
+  padding: 10px 20px;
   text-decoration: none;
 }
 
 .btn:hover {
   background: var(--btn-hover-start);
-  background-image: -webkit-linear-gradient(top, var(--btn-hover-start), var(--btn-hover-end));
-  background-image: -moz-linear-gradient(top, var(--btn-hover-start), var(--btn-hover-end));
-  background-image: -ms-linear-gradient(top, var(--btn-hover-start), var(--btn-hover-end));
-  background-image: -o-linear-gradient(top, var(--btn-hover-start), var(--btn-hover-end));
   background-image: linear-gradient(to bottom, var(--btn-hover-start), var(--btn-hover-end));
   text-decoration: none;
 }
 
 a .btn {
-  display: block; /* Make it a block element to center with margin: auto */
-  margin: 50px auto; /* Add top/bottom margin and center horizontally */
-  text-align: center; /* Ensure text is centered within the button */
+  display: block;
+  margin: 50px auto;
+  text-align: center;
 }
 
 a {
-  color: var(--light-text-footer); /* Light color for dark background */
+  color: var(--light-text-footer);
   font-family: "Montserrat", sans-serif;
   margin: 10px 20px;
   text-decoration: none;
@@ -455,8 +446,8 @@ ul {
 }
 
 .projects a {
-  color: var(--light-link-projects); /* Dark Teal for high contrast */
-  margin: 0; /* Reset margin for better alignment */
+  color: var(--light-link-projects);
+  margin: 0;
 }
 
 .projects a:hover {
