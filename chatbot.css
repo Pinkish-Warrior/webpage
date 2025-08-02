@@ -1,9 +1,20 @@
 
-:root {
-    --chatbot-bg: #f5f5f5;
-    --chatbot-header-bg: #008080;
-    --chatbot-message-bg: #ffffff;
-    --chatbot-user-message-bg: #dcf8c6;
+body {
+    --chatbot-bg: var(--primary-bg);
+    --chatbot-header-bg: var(--dark-teal-bg);
+    --chatbot-message-bg: var(--secondary-bg);
+    --chatbot-user-message-bg: var(--tertiary-bg);
+    --chatbot-text-color: var(--primary-text);
+    --chatbot-input-border-color: var(--hr-color);
+}
+
+body.dark-mode {
+    --chatbot-bg: var(--primary-bg);
+    --chatbot-header-bg: var(--dark-teal-bg);
+    --chatbot-message-bg: var(--secondary-bg);
+    --chatbot-user-message-bg: var(--tertiary-bg);
+    --chatbot-text-color: var(--primary-text);
+    --chatbot-input-border-color: var(--hr-color);
 }
 
 #chatbot-toggler {
@@ -13,7 +24,7 @@
     width: 60px;
     height: 60px;
     background-color: var(--chatbot-header-bg);
-    color: white;
+    color: var(--white-text);
     border: none;
     border-radius: 50%;
     font-size: 24px;
@@ -37,6 +48,7 @@
     transition: transform 0.3s ease-in-out;
     overflow: hidden;
     background-color: var(--chatbot-bg);
+    color: var(--chatbot-text-color);
 }
 
 #chatbot-container.open {
@@ -45,7 +57,7 @@
 
 .chatbot-header {
     background-color: var(--chatbot-header-bg);
-    color: white;
+    color: var(--white-text);
     padding: 15px;
     display: flex;
     justify-content: space-between;
@@ -55,7 +67,7 @@
 #chatbot-close-btn {
     background: none;
     border: none;
-    color: white;
+    color: var(--white-text);
     font-size: 20px;
     cursor: pointer;
 }
@@ -88,19 +100,21 @@
 .chatbot-input-container {
     display: flex;
     padding: 10px;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid var(--chatbot-input-border-color);
 }
 
 #chatbot-input {
     flex: 1;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--chatbot-input-border-color);
     border-radius: 5px;
+    background-color: var(--chatbot-bg);
+    color: var(--chatbot-text-color);
 }
 
 #chatbot-send-btn {
     background-color: var(--chatbot-header-bg);
-    color: white;
+    color: var(--white-text);
     border: none;
     padding: 10px 15px;
     margin-left: 10px;

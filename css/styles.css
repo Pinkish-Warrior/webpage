@@ -71,7 +71,7 @@ h2 {
   font-family: "Montserrat", sans-serif;
   margin-top: 0;
   font-size: clamp(1.5rem, 3vw + 1rem, 2.6rem);
-  color: var(--primary-text);
+  /* color: var(--primary-text); */
   font-weight: normal;
   padding-bottom: 10px;
 }
