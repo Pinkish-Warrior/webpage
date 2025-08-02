@@ -1,0 +1,109 @@
+
+:root {
+    --chatbot-bg: #f5f5f5;
+    --chatbot-header-bg: #008080;
+    --chatbot-message-bg: #ffffff;
+    --chatbot-user-message-bg: #dcf8c6;
+}
+
+#chatbot-toggler {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: var(--chatbot-header-bg);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#chatbot-container {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    width: 350px;
+    max-width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transform: scale(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+    background-color: var(--chatbot-bg);
+}
+
+#chatbot-container.open {
+    transform: scale(1);
+}
+
+.chatbot-header {
+    background-color: var(--chatbot-header-bg);
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#chatbot-close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#chatbot-messages {
+    height: 300px;
+    padding: 15px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.chatbot-message {
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 80%;
+}
+
+.bot-message {
+    background-color: var(--chatbot-message-bg);
+    align-self: flex-start;
+}
+
+.user-message {
+    background-color: var(--chatbot-user-message-bg);
+    align-self: flex-end;
+}
+
+.chatbot-input-container {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+#chatbot-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#chatbot-send-btn {
+    background-color: var(--chatbot-header-bg);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}

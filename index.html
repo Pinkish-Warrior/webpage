@@ -39,6 +39,8 @@
       href="favicon_io/favicon-16x16.png"
     />
     <!-- <link rel="manifest" href="https://cdn.jsdelivr.net/gh/Pinkish-Warrior/gemini-buddy@cbe7c865eb0b67e3286dc94ccde1e99dbe8fc9eb/webpage/favicon_io/site.webmanifest" /> -->
+    <link rel="manifest" href="favicon_io/site.webmanifest" />
+    <link rel="stylesheet" href="chatbot.css" />
     
     <script>
       // Prevents FOUC by applying the correct theme before the page renders
@@ -205,6 +207,19 @@
       <p class="copyright">© 2025 Tania Santana. All Rights Reserved.</p>
     </div>
     <span id="aria-live-region" class="visually-hidden" aria-live="polite"></span>
-    <script src="script.js"></script>
+    <button id="chatbot-toggler">?</button>
+    <div id="chatbot-container">
+        <div class="chatbot-header">
+            <h2>Chatbot</h2>
+            <button id="chatbot-close-btn">&times;</button>
+        </div>
+        <div id="chatbot-messages"></div>
+        <div class="chatbot-input-container">
+            <input type="text" id="chatbot-input" placeholder="Ask me a joke or about me...">
+            <button id="chatbot-send-btn">Send</button>
+        </div>
+    </div>
+  <script src="script.js"></script>
+  <script src="chatbot.js"></script>
   </body>
 </html>
