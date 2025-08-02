@@ -339,6 +339,10 @@ input:checked + .slider:before {
   border-color: var(--border-color-cubic);
 }
 
+.awards-quote {
+  margin-top: 80px;
+}
+
 .contact-me {
   display: flex;
   flex-direction: column;

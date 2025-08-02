@@ -36,6 +36,7 @@ body.dark-mode {
 }
 
 #chatbot-container {
+    font-family: sans-serif;
     position: fixed;
     bottom: 100px;
     right: 20px;

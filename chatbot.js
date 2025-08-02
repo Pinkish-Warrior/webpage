@@ -16,15 +16,27 @@ const jokes = [
     "Why don't programmers like nature? It has too many bugs.",
     "I would tell you a UDP joke, but you might not get it.",
     "There are 10 types of people in the world: those who understand binary, and those who don't.",
-    "Why do Java developers wear glasses? Because they don't C#."
+    "Why do Java developers wear glasses? Because they don't C#.",
+    "What do you call a programmer from Finland? Nerdic.",
+    "Why did the developer go broke? Because he used up all his cache.",
+    "Why was the computer cold? It left its Windows open.",
+    "What is a computer's favorite snack? Microchips.",
+    "Why did the scarecrow win an award? Because he was outstanding in his field."
 ];
 
 const aboutMe = [
     `By day I squash bugs in code. By night, I negotiate bedtime treaties. <br> Somewhere in between, I sip a coffee like it is version control for my sanity`,
     `I have enough life experience to know when to Google, when to guess, and when to walk away and blame cache`,
     `Learning to code while parenting is a great prep for tech - I already speak fluent nonsense, handle unpredictable crashes, and document everything nobody ever reads`,
-    `I juggle parenting, patching bugs, and powering through pull requests - all while pretending I didn't just learn what an API was last month`
+    `I juggle parenting, patching bugs, and powering through pull requests - all while pretending I didn't just learn what an API was last month`,
+    `I'm a firm believer that the best debugger ever made is a good night's sleep.`,
+    `My superpower is turning caffeine into code.`,
+    `I'm not just a developer, I'm a professional problem solver.`,
+    `I speak fluent geek, nerd, and Klingon.`,
+    `I'm powered by coffee, pizza, and a whole lot of Stack Overflow.`
 ];
+
+let welcomeMessageShown = false;
 
 const displayMessage = (message, sender) => {
     if (!chatbotMessages) return;
@@ -59,6 +71,13 @@ if (chatbotToggler) {
         chatbotContainer.classList.toggle('open');
         const isExpanded = chatbotToggler.getAttribute('aria-expanded') === 'true';
         chatbotToggler.setAttribute('aria-expanded', !isExpanded);
+
+        if (chatbotContainer.classList.contains('open') && !welcomeMessageShown) {
+            setTimeout(() => {
+                displayMessage("Hello! Ask me for a joke or a fun fact about Tania.", 'bot');
+                welcomeMessageShown = true;
+            }, 500);
+        }
     });
 }
 
