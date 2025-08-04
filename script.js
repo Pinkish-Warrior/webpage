@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'images/mountain2.png',
             'images/mountain3.png',
             'images/mountain4.png',
-            'images/mountain4.png'
+            'images/mountain5.png'
         ];
         const randomIndex = Math.floor(Math.random() * images.length);
         heroImage.src = images[randomIndex];
