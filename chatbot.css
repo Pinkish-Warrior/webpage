@@ -24,15 +24,19 @@ body.dark-mode {
     width: 60px;
     height: 60px;
     background-color: var(--chatbot-header-bg);
-    color: var(--white-text);
     border: none;
     border-radius: 50%;
-    font-size: 24px;
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#chatbot-toggler .chatbot-icon {
+    width: 30px;
+    height: 30px;
 }
 
 #chatbot-container {
