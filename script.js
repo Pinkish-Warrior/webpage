@@ -52,3 +52,19 @@ if (contactBtn && ariaLiveRegion) {
         }, 1000);
     });
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const heroImage = document.getElementById('hero-image');
+    if (heroImage) {
+        const images = [
+            'images/mountain0.png',
+            'images/mountain1.png',
+            'images/mountain2.png',
+            'images/mountain3.png',
+            'images/mountain4.png',
+            'images/mountain4.png'
+        ];
+        const randomIndex = Math.floor(Math.random() * images.length);
+        heroImage.src = images[randomIndex];
+    }
+});
