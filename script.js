@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (heroImage) {
         const images = [
             'images/mountain0.png',
-            'images/mountain1.png',
+            // 'images/mountain1.png',
             'images/mountain2.png',
             'images/mountain3.png',
             'images/mountain4.png',
