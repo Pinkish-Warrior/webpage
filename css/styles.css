@@ -80,6 +80,172 @@ h2 {
   color: var(--secondary-text);
 }
 
+.award-badge {
+  display: inline-block;
+  margin: 0.6rem auto 0;
+  padding: 0.4rem 1rem;
+  border: 1px solid var(--secondary-text);
+  border-radius: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.85rem;
+  color: var(--secondary-text);
+  letter-spacing: 0.03em;
+}
+
+.profile-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 1.2rem;
+}
+
+.seeking-badge {
+  display: inline-block;
+  margin: 0;
+  padding: 0.35rem 1rem;
+  border-radius: 20px;
+  background-color: var(--btn-bg-start);
+  color: var(--white-text);
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.03em;
+}
+
+.profile-btn {
+  font-size: 1rem;
+  padding: 8px 20px;
+}
+
+/* Project case study cards */
+.project-card {
+  background-color: var(--primary-bg);
+  border: 1px solid var(--border-color-cubic);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px var(--box-shadow-color);
+  padding: 1.5rem;
+  text-align: left;
+}
+
+.project-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.project-header h4 {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: var(--tertiary-text);
+}
+
+.project-stack {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.75rem;
+  color: var(--secondary-text);
+  letter-spacing: 0.03em;
+}
+
+.project-card p {
+  margin: 0.3rem 0;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--primary-text);
+}
+
+.project-card p strong {
+  color: var(--secondary-text);
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 0.8rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.85rem;
+  color: var(--tertiary-text);
+  text-decoration: none;
+  border-bottom: 1px solid var(--tertiary-text);
+}
+
+.project-link:hover {
+  color: var(--secondary-text);
+  border-bottom-color: var(--secondary-text);
+}
+
+.github-link {
+  display: inline-block;
+  margin-top: 1rem;
+  border-bottom: none;
+}
+
+.github-icon {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.2s ease;
+  display: block;
+}
+
+.github-icon path {
+  fill: var(--tertiary-text);
+  transition: fill 0.2s ease;
+}
+
+.github-link:hover .github-icon {
+  transform: scale(1.15);
+}
+
+.github-link:hover .github-icon path {
+  fill: #00a86b;
+}
+
+:root.dark-mode .github-icon path {
+  fill: var(--secondary-text);
+}
+
+/* Skills proficiency tiers */
+.skills-tier {
+  margin-bottom: 1rem;
+}
+
+.tier-label {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--secondary-text);
+  margin-bottom: 0.4rem;
+}
+
+.tier-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.skill-tag {
+  display: inline-block;
+  padding: 0.25rem 0.7rem;
+  border-radius: 12px;
+  background-color: var(--tertiary-bg);
+  border: 1px solid var(--border-color-chilli);
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  color: var(--tertiary-text);
+}
+
+:root.dark-mode .skill-tag {
+  border-color: var(--border-color-cubic);
+  color: var(--secondary-text);
+}
+
 h3 {
   font-family: "Montserrat", sans-serif;
   margin-top: 0;
@@ -99,20 +265,55 @@ h4, h5 {
 }
 
 p {
-  line-height: 2;
+  line-height: 1.8;
   font-size: clamp(1rem, 2vw + 0.5rem, 1.2rem);
 }
 
 .quote-color {
-  color: var(--secondary-text);
-  font-size: clamp(0.9rem, 1.8vw + 0.4rem, 1.1rem);
+  position: relative;
+  color: var(--primary-text);
+  font-size: clamp(0.95rem, 1.8vw + 0.4rem, 1.05rem);
   font-style: italic;
+  line-height: 1.9;
   display: block;
   background-color: var(--tertiary-bg);
-  padding: 1.5rem 2rem;
-  margin: 2rem auto;
+  border: 1px solid var(--border-color-cubic);
+  border-left: 4px solid var(--secondary-text);
+  box-shadow: 0 4px 8px var(--box-shadow-color);
   border-radius: 8px;
-  width: 60%;
+  padding: 2.5rem 2.5rem 2rem;
+  margin: 1.5rem auto 0;
+  max-width: 700px;
+  text-align: left;
+}
+
+.quote-color::before {
+  content: '\201C';
+  font-size: 5rem;
+  line-height: 1;
+  color: var(--secondary-text);
+  opacity: 0.4;
+  position: absolute;
+  top: 0.2rem;
+  left: 1rem;
+}
+
+.quote-color p {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.quote-attribution {
+  display: block;
+  margin-top: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  color: var(--secondary-text);
+  letter-spacing: 0.03em;
+  text-align: right;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 hr {
@@ -186,8 +387,12 @@ input:checked + .slider {
   background-color: var(--switch-bg-on);
 }
 
-input:focus + .slider {
-  box-shadow: 0 0 0 1px var(--switch-bg-on);
+input:focus-visible + .slider {
+  box-shadow: 0 0 0 2px var(--primary-bg), 0 0 0 4px var(--switch-bg-off);
+}
+
+:root.dark-mode input:focus-visible + .slider {
+  box-shadow: 0 0 0 2px var(--primary-bg), 0 0 0 4px var(--switch-bg-on);
 }
 
 input:checked + .slider:before {
@@ -206,7 +411,7 @@ input:checked + .slider:before {
 }
 
 .middle-container {
-  margin: 100px 0;
+  margin: 60px 0;
   position: relative;
 }
 
@@ -250,9 +455,16 @@ input:checked + .slider:before {
 }
 
 .skill-row {
-  width: 50%;
-  margin: 100px auto;
+  width: 60%;
+  margin: 50px auto;
   text-align: left;
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.skill-row-text {
+  flex: 1;
 }
 
 .skills-grid {
@@ -292,7 +504,8 @@ input:checked + .slider:before {
 }
 
 .intro {
-  width: 30%;
+  width: 55%;
+  max-width: 780px;
   margin: auto;
 }
 
@@ -306,41 +519,40 @@ input:checked + .slider:before {
 }
 
 .computer {
-  width: 30%;
-  height: auto;
-  float: left;
-  margin-right: 30px;
+  width: 130px;
+  height: 130px;
+  flex-shrink: 0;
   border-radius: 50%;
   border-style: solid;
   border-color: var(--primary-bg);
-  position: relative;
-  max-width: 130%;
-  display: block;
-  z-index: 1;
+  object-fit: cover;
 }
 
 .chilli-img {
-  width: 30%;
-  height: auto;
-  float: right;
-  margin-left: 30px;
+  width: 130px;
+  height: 130px;
+  flex-shrink: 0;
   border-radius: 50%;
   border-style: solid;
   border-color: var(--border-color-chilli);
+  object-fit: cover;
 }
 
 .cubic {
-  width: 28%;
-  height: auto;
-  float: left;
-  margin-right: 30px;
+  width: 130px;
+  height: 130px;
+  flex-shrink: 0;
   border-radius: 50%;
   border-style: solid;
   border-color: var(--border-color-cubic);
+  object-fit: cover;
 }
 
 .awards-quote {
-  margin-top: 80px;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contact-me {
@@ -348,7 +560,8 @@ input:checked + .slider:before {
   flex-direction: column;
   align-items: center;
   position: relative;
-  padding-bottom: 150px;
+  padding-top: 20px;
+  padding-bottom: 40px;
 }
 
 .contact-message {
@@ -380,7 +593,7 @@ input:checked + .slider:before {
 }
 
 .mountain-img {
-  max-width: 60%;
+  max-width: 50%;
   height: auto;
   display: block;
   margin: 0 auto;
@@ -393,7 +606,7 @@ input:checked + .slider:before {
   box-shadow: 0px 1px 3px #66BFBF;
   font-family: "Montserrat", sans-serif;
   color: var(--white-text);
-  font-size: 20px;
+  font-size: 1.1rem;
   padding: 10px 20px;
   text-decoration: none;
 }
@@ -427,17 +640,54 @@ ul {
 
 .side-by-side-container {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
   margin: 0 auto;
+  padding: 0 5%;
+  max-width: 1000px;
 }
 
-.gems-found, .projects {
-  width: 45%;
+.gems-found {
+  width: 100%;
+  max-width: 700px;
+  text-align: left;
+  margin: 2rem auto 0;
+}
+
+.projects {
+  width: 100%;
+  text-align: left;
+}
+
+.projects h3 {
+  text-align: center;
+}
+
+.projects .project-cards-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.4rem;
+}
+
+.gems-found h3,
+.gems-found > p {
+  text-align: center;
 }
 
 .gems-found li {
-  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.gems-found li {
+  margin-bottom: 0.6rem;
+}
+
+.gem-name {
+  color: var(--secondary-text);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.03em;
 }
 
 .projects li a{
@@ -474,16 +724,21 @@ ul {
 /* For screens smaller than 800px (tablets and mobile phones) */
 @media (max-width: 800px) {
   .skill-row {
-    width: 80%;
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .skill-row-text {
     text-align: center;
   }
 
   .computer,
   .chilli-img,
   .cubic {
-    float: none;
-    margin: 20px auto;
-    width: 50%;
+    width: 100px;
+    height: 100px;
   }
 
   .top-cloud,
@@ -502,6 +757,11 @@ ul {
 
   .gems-found, .projects {
     width: 90%;
+    padding-left: 0;
     margin-bottom: 2rem;
+  }
+
+  .projects .project-cards-grid {
+    grid-template-columns: 1fr;
   }
 }

@@ -54,15 +54,17 @@ if (contactBtn && ariaLiveRegion) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+    const yearEl = document.getElementById('copyright-year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+
     const heroImage = document.getElementById('hero-image');
     if (heroImage) {
         const images = [
-            'images/mountain0.png',
-            // 'images/mountain1.png',
-            'images/mountain2.png',
-            'images/mountain3.png',
-            'images/mountain4.png',
-            'images/mountain5.png'
+            'images/mountain0.webp',
+            'images/mountain2.webp',
+            'images/mountain3.webp',
+            'images/mountain4.webp',
+            'images/mountain5.webp'
         ];
         const randomIndex = Math.floor(Math.random() * images.length);
         heroImage.src = images[randomIndex];
