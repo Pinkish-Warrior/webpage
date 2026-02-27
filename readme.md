@@ -1,4 +1,4 @@
-# Tania Rosa - Junior Software Developer
+# Tania Rosa - Full-Stack Software Developer
 
 <p align="right">
   <img src="./images/tRosa.png" width="150" alt="Tania Rosa Avatar">
@@ -14,7 +14,9 @@
 
 ## 👋 About Me
 
-I am Tania, a London-based junior software developer with a diligent mindset, passionately seeking new opportunities to innovate and contribute to the tech industry. My journey into web development started with curiosity and has grown into a deep passion. Mastering code has presented me with stimulating challenges and enabled me to develop essential technical skills, paving the way for my career transition into Software Development. I find great satisfaction in building and maintaining software applications and websites, all while having an incredible amount of FUN throughout the entire process 🎉.
+I’m Tania, a London-based full-stack software developer with a strong work ethic and a genuine passion for building technology. What began as curiosity about how the web works has grown into a deep commitment to developing reliable, thoughtful software. Learning to code has challenged me in the best way—it’s strengthened my problem-solving skills, expanded my technical abilities, and supported my transition into a career in software development.
+
+I truly enjoy building and maintaining applications and websites, especially when turning ideas into something practical and useful. For me, the process of developing software isn’t just rewarding—it’s something I genuinely love doing🎉.
 
 ---
 
@@ -62,19 +64,6 @@ I am Tania, a London-based junior software developer with a diligent mindset, pa
 - Business Process Automation
 - API Integration
 - Prototyping
-
----
-
-## 🚀 Projects
-
-- **Guessing Game:** A number guessing game using JavaScript DOM logic.
-  - [View Repo](https://github.com/Pinkish-Warrior/guessing-game)
-
-- **Pig Game:** A simple dice game using loops and conditionals.
-  - [View Repo](https://github.com/Pinkish-Warrior/pigGame)
-
-- **ASCII ART Web:** An online application for rendering text as ASCII art.
-  - [View Web App](https://ascii-art-web.onrender.com/)
 
 ---
 
