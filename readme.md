@@ -1,4 +1,4 @@
-# Tania Rosa &nbsp;·&nbsp; Full-Stack Software Developer
+# Tania Rosa - Full-Stack Software Developer
 
 <p align="right">
   <img src="./images/tRosa.png" width="150" alt="Tania Rosa Avatar">
@@ -14,7 +14,13 @@
 
 ## 👋 About Me
 
-I'm Tania — a London-based full-stack developer who got hooked on understanding how the web actually works, and never looked back.
+I’m Tania, a London-based full-stack software developer with a strong work ethic and a genuine passion for building technology. What began as curiosity about how the web works has grown into a deep commitment to developing reliable, thoughtful software. Learning to code has challenged me in the best way—it’s strengthened my problem-solving skills, expanded my technical abilities, and supported my transition into a career in software development.
+
+I truly enjoy building and maintaining applications and websites, especially when turning ideas into something practical and useful. For me, the process of developing software isn’t just rewarding—it’s something I genuinely love doing🎉.
+
+---
+
+## 🛠️ Skills & Technologies
 
 What started as curiosity turned into a genuine craft. I build and maintain applications I'd actually want to use, and I care deeply about writing software that's reliable, thoughtful, and useful to real people. The problem-solving side of development is something I genuinely love — not just tolerate — and that shows in how I work.
 
@@ -41,20 +47,7 @@ I'm drawn to projects where there's a real problem to solve, a team that cares a
 
 ---
 
-## 🚀 Projects
-
-- **Guessing Game:** A number guessing game using JavaScript DOM logic.
-  - [View Repo](https://github.com/Pinkish-Warrior/guessing-game)
-
-- **Pig Game:** A simple dice game using loops and conditionals.
-  - [View Repo](https://github.com/Pinkish-Warrior/pigGame)
-
-- **ASCII ART Web:** An online application for rendering text as ASCII art.
-  - [View Web App](https://ascii-art-web.onrender.com/)
-
----
-
-## ✨ Beyond the Code
+## ✨ Beyond Code
 
 When I step away from the screen:
 
